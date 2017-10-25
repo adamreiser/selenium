@@ -13,6 +13,10 @@ Repository for *Selenium: dark side of the moon* demo and examples.
 - Selenium Python bindings[1]
     - pip install selenium
 
+- Lab environment
+    - Some of these examples use a local MediaWiki instance running in Docker. This is relatively easy to set up
+    - https://github.com/kristophjunge/docker-mediawiki
+
 
 ## Optional
 

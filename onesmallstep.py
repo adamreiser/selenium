@@ -12,4 +12,4 @@ wd = webdriver.Firefox(firefox_binary='/opt/firefox/firefox')
 atexit.register(wd.quit)
 
 wd.implicitly_wait(30)
-wd.get("https://wikipedia.org")
+wd.get("http://localhost:8000")

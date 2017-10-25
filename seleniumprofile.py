@@ -14,6 +14,7 @@ class SeleniumProxy():
         fp.set_preference("network.proxy.ssl", "127.0.0.1")
         fp.set_preference("network.proxy.ssl_port", 8080)
         fp.set_preference("network.proxy.type", 1)
+        fp.set_preference("network.proxy.no_proxies_on", "")
 
         # Install the proxy CA
         shutil.copy(ca_file, fp.path)
