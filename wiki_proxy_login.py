@@ -4,11 +4,15 @@ from selenium.webdriver.support.ui import WebDriverWait
 import atexit
 import tabcomplete
 import credentials
+from seleniumprofile import SeleniumProxy
 
+
+proxy = SeleniumProxy(firefox_binary='/opt/firefox/firefox',
+                      ca_file='/root/credentials/cert8.db')
 
 (u, p) = credentials.load("/root/credentials/mediawiki.txt")
 
-wd = webdriver.Firefox(firefox_binary='/opt/firefox/firefox')
+wd = proxy.wd
 atexit.register(wd.quit)
 wd.implicitly_wait(30)
 
