@@ -4,10 +4,13 @@ from selenium.webdriver.support.ui import WebDriverWait
 import atexit
 import tabcomplete
 import credentials
+import os
 from seleniumprofile import SeleniumProxy
 
-proxy = SeleniumProxy(firefox_binary='/opt/firefox/firefox',
-                      ca_file='/root/credentials/cert8.db')
+
+proxy = SeleniumProxy(firefox_binary="/opt/firefox/firefox",
+                      ca_file="/root/credentials/cert8.db",
+                      args="--headless")
 
 (u, p) = credentials.load("/root/credentials/mediawiki.txt")
 

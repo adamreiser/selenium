@@ -2,6 +2,7 @@
 
 Repository for *Selenium: dark side of the moon* demo and examples.
 
+
 ## Requirements
 
 - Firefox
@@ -13,19 +14,21 @@ Repository for *Selenium: dark side of the moon* demo and examples.
 - Selenium Python bindings[1]
     - pip install selenium
 
-- Lab environment
-    - Some of these examples use a local MediaWiki instance running in Docker. This is relatively easy to set up
-    - https://github.com/kristophjunge/docker-mediawiki
-
+- Docker, Docker Compose
+    - The demo environment is a local MediaWiki instance running under Docker.
 
 ## Optional
 
-- pyvirtualdisplay
-    - pip install pyvirtualdisplay
-    - apt-get install xvfb xserver-xephyr vnc4server
-
 - Selenium IDE / Selenium Builder
     - No longer recommended. IDE incompatible with current versions except esr[2].
+
+- PhantomJS
+    - Alternative, can also be used with WebDriver.
+
+- xvfb
+    - Option for headless mode when not natively supported by the browser.
+    xvfb-run and pyvirtualdisplay are two ways to use it.
+
 
 ## References
 

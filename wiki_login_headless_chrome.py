@@ -4,18 +4,20 @@ from selenium.webdriver.support.ui import WebDriverWait
 import atexit
 import tabcomplete
 import credentials
-from seleniumprofile import SeleniumProxy
 
-proxy = SeleniumProxy(firefox_binary='/opt/firefox/firefox',
-                      ca_file='/root/credentials/cert8.db')
+options = webdriver.chrome.options.Options()
+options.add_argument("--headless")
+
+wd = webdriver.Chrome(chrome_options=options)
 
 (u, p) = credentials.load("/root/credentials/mediawiki.txt")
 
-wd = proxy.wd
 atexit.register(wd.quit)
 wd.implicitly_wait(30)
 
 wd.get("http://localhost:8000")
+
+wd.maximize_window()
 
 wd.find_element_by_link_text("Log in").click()
 
