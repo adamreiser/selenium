@@ -17,7 +17,7 @@ wd.get("http://localhost:8000")
 
 wd.maximize_window()
 
-wd.find_element_by_link_text("Log in").click()
+wd.find_element_by_id("pt-login").click()
 
 wd.find_element_by_id("wpName1").send_keys(u)
 

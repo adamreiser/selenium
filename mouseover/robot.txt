@@ -1,0 +1,3 @@
+Clicked link without mousing over it first.
+
+You might be a robot or a mobile device.
