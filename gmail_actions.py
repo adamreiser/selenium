@@ -48,3 +48,6 @@ enter_password.move_to_element(pass_el)
 enter_password.click(pass_el)
 enter_password.send_keys("{}\n".format(p))
 enter_password.perform()
+
+wd.find_element_by_xpath("//span[.='open me']").click()
+wd.find_element_by_partial_link_text("127.0.0.1").click()
