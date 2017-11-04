@@ -6,7 +6,7 @@ PhantomJS is much faster.
 
 var page = require('webpage').create();
 var url = 'http://localhost:8000';
-var out = 'wiki.png'
+var out = 'wiki_phantomjs.png'
 
 page.viewportSize = { width: 1024, height: 768 };
 
