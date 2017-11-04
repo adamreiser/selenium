@@ -16,12 +16,9 @@ from seleniumprofile import SeleniumProxy
 # except as a teaching example. Use gmail's API for any kind of real
 # automation.
 
-proxy = SeleniumProxy(firefox_binary='/opt/firefox/firefox',
-                      ca_file='/root/credentials/cert8.db')
-
 (u, p) = credentials.load('/root/credentials/credentials.txt')
 
-wd = proxy.wd
+wd = webdriver.Firefox(firefox_binary='/opt/firefox/firefox')
 
 atexit.register(wd.quit)
 
