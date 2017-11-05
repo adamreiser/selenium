@@ -50,7 +50,7 @@ root@kali:~# ls /root/credentials/
 cert8.db  gmail.txt  mediawiki.txt
 ```
 
-You should now be able to run the demo scripts such as `python -i gmail.py`.
+You should now be able to run the demo scripts such as `python -i gmail.py`. Tab completion should be enabled. This is very handy for interactive Selenium sessions when building out a script. Try tab completion on the webdriver object and element objects, as well as the selenium modules themselves!
 
 ## References
 
