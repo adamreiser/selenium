@@ -19,7 +19,7 @@ from seleniumprofile import SeleniumProxy
 proxy = SeleniumProxy(firefox_binary='/opt/firefox/firefox',
                       ca_file='/root/credentials/cert8.db')
 
-(u, p) = credentials.load('/root/credentials/credentials.txt')
+(u, p) = credentials.load('/root/credentials/gmail.txt')
 
 wd = proxy.wd
 

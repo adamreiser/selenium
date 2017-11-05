@@ -16,7 +16,7 @@ from seleniumprofile import SeleniumProxy
 # except as a teaching example. Use gmail's API for any kind of real
 # automation.
 
-(u, p) = credentials.load('/root/credentials/credentials.txt')
+(u, p) = credentials.load('/root/credentials/gmail.txt')
 
 wd = webdriver.Firefox(firefox_binary='/opt/firefox/firefox')
 
